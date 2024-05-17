@@ -23,8 +23,15 @@ router.post('/register', async (req, res) => {
     const { username, password } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
     const newUser = { id: db.users.length + 1, username, password: hashedPassword };
+
+    console.log('New user:', newUser);  // Log the new user data
+
     db.users.push(newUser);
+    console.log('Updated users:', db.users);  // Log the updated users list
+
     saveDb(db);
+    console.log('Database saved');  // Log after saving the database
+
     res.status(201).json({ message: 'User registered successfully', user: newUser });
 });
 
