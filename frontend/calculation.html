@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculation</title>
     <script src="scripts/calculation.js" defer></script>
+    <link rel="stylesheet" href="styles/calculation.css">
 </head>
 <body>
-    <h1>Calculation</h1>
+    <h1>Calculadora de soma</h1>
     <form id="calculationForm">
-        <input type="number" id="num1" placeholder="Number 1" required>
-        <input type="number" id="num2" placeholder="Number 2" required>
-        <button type="submit">Calculate</button>
+        <input type="number" id="num1" placeholder="Primeiro número" required>
+        <p>+</p>
+        <input type="number" id="num2" placeholder="Segundo número" required>
+        <button type="submit">Calcular</button>
     </form>
     <div id="calculationResult"></div>
 </body>

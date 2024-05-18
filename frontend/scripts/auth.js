@@ -45,8 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (response.ok) {
                 // Save user data in local storage
                 localStorage.setItem('user', JSON.stringify(data.user));
-                // Redirect to the home page
-                window.location.href = 'index.html';
+                // Wait for 3 seconds before redirecting to the home page
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 800);
             }
         });
     }

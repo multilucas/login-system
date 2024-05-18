@@ -14,6 +14,11 @@
       "id": 3,
       "username": "a",
       "password": "$2b$10$/tvCFGkStR588iDeK4CTC.93DLjBfRbeUU97Iu8ZhDUH2Ol1/YrD6"
+    },
+    {
+      "id": 4,
+      "username": "thiago",
+      "password": "$2b$10$rhfw5uCbqwSzQs0mx2sNHuChp.wJLtiVgZ0rIWMjEeEk39scJ7.FK"
     }
   ],
   "products": [
