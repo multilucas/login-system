@@ -24,13 +24,45 @@
   "products": [
     {
       "id": 1,
-      "name": "Product 1",
-      "price": 10
+      "name": "Produtinho 1",
+      "price": 10,
+      "image": "./images/corrente_de_prata.jpg"
     },
     {
-      "id": 2,
-      "name": "Product 2",
-      "price": 20
+      "id": 1,
+      "name": "Product 1",
+      "price": 20,
+      "image": "./images/corrente_de_prata.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 20,
+      "image": "./images/corrente_de_prata.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 20,
+      "image": "./images/corrente_de_prata.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 20,
+      "image": "./images/corrente_de_prata.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 20,
+      "image": "./images/corrente_de_prata.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 20,
+      "image": "./images/corrente_de_prata.jpg"
     }
   ],
   "orders": [
