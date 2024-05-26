@@ -5,7 +5,7 @@ window.addEventListener('load', async () => {
     const ordersList = document.getElementById('ordersList');
     orders.forEach(order => {
         const listItem = document.createElement('li');
-        listItem.textContent = `ID: ${order.id}, Product ID: ${order.productId}, Quantity: ${order.quantity}`;
+        listItem.textContent = `Número do pedido: ${order.id}, Quantidade: ${order.quantity}`;
         ordersList.appendChild(listItem);
     });
 });

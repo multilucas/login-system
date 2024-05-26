@@ -43,12 +43,34 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('message').textContent = data.message;
 
             if (response.ok) {
-                // Save user data in local storage
-                localStorage.setItem('user', JSON.stringify(data.user));
-                // Wait for 3 seconds before redirecting to the home page
+                // Save the token in local storage
+                localStorage.setItem('authToken', data.token);
+                // Redirect to the home page
                 setTimeout(() => {
                     window.location.href = 'index.html';
                 }, 800);
+            }
+        });
+    }
+
+    // Check if the user is authenticated before allowing access to certain pages
+    if (window.location.pathname.endsWith('register.html')) {
+        const token = localStorage.getItem('authToken');
+        if (!token) {
+            alert('Você deve estar logado para acessar esta página.');
+            window.location.href = 'login.html'; // Redirect to the login page
+        }
+    }
+
+    // Add authentication check for index.html registration link
+    const registerLink = document.querySelector('a[href="register.html"]');
+    if (registerLink) {
+        registerLink.addEventListener('click', (e) => {
+            const token = localStorage.getItem('authToken');
+            if (!token) {
+                e.preventDefault();
+                alert('Você deve estar logado para acessar esta página.');
+                window.location.href = 'login.html'; // Redirect to the login page
             }
         });
     }

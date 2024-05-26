@@ -8,15 +8,15 @@ body {
 h1 {
     color: #444;
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 #productsList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
+    justify-content: center;
 }
 
 #productsList li {
@@ -28,14 +28,8 @@ h1 {
     background-color: #5C6BC0;
     color: #fff;
     transition: background-color 0.3s ease;
-    
 }
-#productsList {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
+
 #productsList li:hover {
     background-color: #7986CB;
 }
@@ -43,10 +37,72 @@ h1 {
 .product-image {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
-.product-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.add-product-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.add-product-container h2 {
+    text-align: center;
+    color: #444;
+}
+
+#productForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#productForm label {
+    color: #444;
+    font-weight: bold;
+}
+
+#productForm input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#productForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5C6BC0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#productForm button:hover {
+    background-color: #7986CB;
+}
+
+.add-product-button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#addProductButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5C6BC0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addProductButton:hover {
+    background-color: #7986CB;
 }

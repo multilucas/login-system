@@ -1,41 +1,63 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
 }
 
 h1 {
+    margin-bottom: 20px;
     color: #333;
-    text-align: center;
-    padding: 20px 0;
 }
 
-#calculationForm {
+form {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px;
+    flex-direction: column;
 }
 
-#calculationForm input {
+input[type="text"] {
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
-#calculationForm button {
-    padding: 10px 20px;
+button {
+    padding: 10px;
     border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#calculationResult {
-    margin: 20px;
-    font-size: 20px;
+button:hover {
+    background-color: #0056b3;
+}
+
+#shippingResult {
+    margin-top: 20px;
+    font-size: 16px;
     color: #333;
-    text-align: center;
 }

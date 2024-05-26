@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculation</title>
+    <title>Calculadora de Frete</title>
     <script src="scripts/calculation.js" defer></script>
     <link rel="stylesheet" href="styles/calculation.css">
 </head>
 <body>
-    <h1>Calculadora de soma</h1>
-    <form id="calculationForm">
-        <input type="number" id="num1" placeholder="Primeiro número" required>
-        <p>+</p>
-        <input type="number" id="num2" placeholder="Segundo número" required>
-        <button type="submit">Calcular</button>
-    </form>
-    <div id="calculationResult"></div>
+    <div class="container">
+        <h1>Calculadora de Frete</h1>
+        <form id="shippingForm">
+            <input type="text" id="cep" placeholder="Digite o CEP" required>
+            <button type="submit">Calcular Frete</button>
+        </form>
+        <div id="shippingResult"></div>
+    </div>
 </body>
 </html>

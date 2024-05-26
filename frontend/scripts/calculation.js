@@ -1,15 +1,14 @@
-document.getElementById('calculationForm').addEventListener('submit', async (e) => {
+document.getElementById('shippingForm').addEventListener('submit', async (e) => {
     e.preventDefault();
-    const num1 = document.getElementById('num1').value;
-    const num2 = document.getElementById('num2').value;
+    const cep = document.getElementById('cep').value;
 
-    const response = await fetch(`http://localhost:3000/api/calculate/calculate?num1=${num1}&num2=${num2}`);
+    const response = await fetch(`http://localhost:3000/api/calculate/calculate-shipping?cep=${cep}`);
     const data = await response.json();
 
-    const calculationResult = document.getElementById('calculationResult');
+    const shippingResult = document.getElementById('shippingResult');
     if (response.ok) {
-        calculationResult.textContent = `Result: ${data.result}`;
+        shippingResult.textContent = `Tempo de entrega: ${data.shippingTime} dias, Custo de entrega: R$${data.shippingCost}`;
     } else {
-        calculationResult.textContent = data.message;
+        shippingResult.textContent = 'Erro ao calcular o frete';
     }
 });
