@@ -5,7 +5,7 @@ window.addEventListener('load', async () => {
     const usersList = document.getElementById('usersList');
     users.forEach(user => {
         const listItem = document.createElement('li');
-        listItem.textContent = `ID: ${user.id}, Username: ${user.username}`;
+        listItem.textContent = `ID: ${user.id}, Usuário: ${user.username}`;
         usersList.appendChild(listItem);
     });
 });

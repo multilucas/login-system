@@ -10,7 +10,7 @@ const saveDb = (db) => {
     fs.writeFileSync(path.join(__dirname, '../data/db.json'), JSON.stringify(db, null, 2));
 };
 
-const SECRET_KEY = 'your_jwt_secret_key';  // Defina uma chave secreta adequada
+const SECRET_KEY = 'your_jwt_secret_key';  
 
 router.post('/login', async (req, res) => {
     const { username, password } = req.body;

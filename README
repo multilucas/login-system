@@ -1,0 +1,5 @@
+Para iniciar o projeto:
+    Abrir o projeto no Visual Studio Code
+    No terminal digitar o comando: npm start
+    Abrir o arquivo 'frontend/index.html' com live server
+    No navegador digitar a url: http://localhost:5500/frontend/index.html
